@@ -1,0 +1,23 @@
+$lato: "Lato", sans-serif;
+$raleway: "Raleway", sans-serif;
+$bluetext: rgba(67, 171, 240, 1);
+$grey: rgba(61, 64, 80, 1);
+$body: rgba(195, 195, 195, 1);
+$sizes: (
+  "sm-": 417px,
+  "sm": 576px,
+  "sm+": 626px,
+  "md": 768px,
+  "md+": 836px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+@mixin media($minmax, $media) {
+  @each $size, $resolution in $sizes {
+    @if $media == $size {
+      @media only screen and (#{$minmax}-width: $resolution) {
+        @content;
+      }
+    }
+  }
+}

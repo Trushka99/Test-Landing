@@ -1,0 +1,9 @@
+@import "../vendor/fonts.scss", "../vendor/constants.scss",
+  "../blocks/main-image/main-image.scss", "../blocks/order/order.scss",
+  "../vendor/normalize.scss", "../blocks/header/header.scss",
+  "../blocks/active/active.scss", "../blocks/footer/footer.scss";
+* {
+  font-family: $lato;
+  margin: 0;
+  padding: 0;
+}

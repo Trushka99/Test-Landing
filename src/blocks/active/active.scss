@@ -1,0 +1,19 @@
+.active .order__arrow {
+  transform: rotate(180deg);
+  border-top: 6px solid white;
+}
+.active .order__dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+}
+.active .order__select-button {
+  background-color: $grey;
+  border: none;
+}
+.active .order__select-button .order__selected-value {
+  color: white;
+}
+.header__list.active {
+  visibility: visible;
+}
