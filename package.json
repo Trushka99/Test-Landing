@@ -1,12 +1,14 @@
 {
   "name": "test-task",
   "version": "1.0.0",
+  "homepage": "https://trushka99.github.io/Test-Landing/",
   "private": true,
   "description": "",
   "scripts": {
     "compile:sass": "sass src/index.scss src/styles.css -w",
     "build": "webpack",
     "start": "webpack --watch",
+    "predeploy": "rm -rf build && npm run build",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
